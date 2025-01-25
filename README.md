@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Delivery Tracker App**  
 
-## Getting Started
+Aplicación web diseñada para facilitar la gestión de rutas de entrega entre empresas y sus repartidores. Este proyecto está desarrollado como parte de un portafolio personal y utiliza tecnologías modernas como **Next.js**, **Node.js**, **MongoDB** y **Vercel**.
 
-First, run the development server:
+## **Características principales**  
+- **Autenticación con roles**:  
+  Los usuarios pueden registrarse e iniciar sesión como **empresa** o **repartidor**.  
+  - Las **empresas** pueden visualizar a sus repartidores y el progreso de sus rutas.  
+  - Los **repartidores** pueden gestionar sus rutas activas y registrar nuevas entregas.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Gestión de rutas**:  
+  - Visualización de rutas activas con mapas interactivos.  
+  - Creación de nuevas rutas ingresando origen, destino y medio de transporte.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Relaciones empresa-repartidor**:  
+  Los repartidores se asignan a una empresa al registrarse, permitiendo una gestión centralizada.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Almacenamiento seguro**:  
+  Contraseñas cifradas y datos almacenados en una base de datos MongoDB.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **Tecnologías utilizadas**  
+- **Frontend**: Next.js (con soporte para el App Router).  
+- **Backend**: Node.js y MongoDB.  
+- **Hosting**: Vercel.  
+- **Autenticación**: JSON Web Tokens (JWT) y bcrypt para cifrado de contraseñas.  
+- **Mapas**: Integración con librerías de mapas (como Leaflet o Google Maps API).  
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **Objetivo del proyecto**  
+Este proyecto tiene como finalidad:
+1. Aprender y aplicar **Next.js**, **Node.js**, **MongoDB** y **Vercel**.
+2. Desarrollar habilidades en la creación de sistemas de autenticación, manejo de bases de datos, y gestión de datos dinámicos.
+3. Construir una aplicación funcional que sea útil como parte de un portafolio profesional.
